@@ -160,7 +160,7 @@ public class SinhVien {
 		//Tìm SV theo tên
 		int count = 0;
 		for(SinhVien sv:list) {
-			if (sv.ten.contains(tenSV.strip())) {
+			if (sv.ten.equals(tenSV.strip())) {
 				sv.xuatSV();
 				count = 1;
 			}
@@ -180,7 +180,7 @@ public class SinhVien {
 		//Tìm SV theo mã
 		int count = 0;
 		for(SinhVien sv:list) {
-			if (sv.maSV.contains(ma.strip())) {
+			if (sv.maSV.equals(ma.strip())) {
 				sv.xuatSV();
 				count = 1;
 			}

@@ -5,8 +5,15 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Câu 2: 
- * 
+ * Câu 2: Xd chương trình THEO HƯỚNG ĐỐI TƯỢNG cho phép người dùng nhập: Tên, Mã SV, điểm Toán, Lý, Hóa
+ * 	Cho phép nhập nhiều sinh viên (hàm tạo dữ liệu giả) và thực hiện:
+ * 		1. Tính điểm TB: (T + L + H)/3
+ * 		2. Xếp loại từng SV: >= 9 -> Xuất sắc, 9>Giỏi>=8, 8>Khá>=7, 7>TB>=5, còn lại Yếu. In ra danh sách
+ * 		3. In ra SV có ĐTB cao nhất. In ra danh sách
+ * 		4. In ra tất cả SV Yếu. In ra danh sách
+ * 		5. Tìm SV theo tên. In ra danh sách
+ * 		6. Tìm SV theo mã
+ * 		7. Xóa SV theo mã
  */
 public class Cau2 {
 
@@ -21,29 +28,29 @@ public class Cau2 {
 			return;
 		}
 		
-		//2. Tính điểm TB, xếp loại từng SV
+		//2.1. Tính điểm TB, xếp loại từng SV
 		tongKet(listSV);
 		
-		//3. In ra danh sách SV
+		//2.2. In ra danh sách SV
 		sv.xuatSV(listSV);
 		
-		//4. In ra SV có ĐTB cao nhất
+		//3. In ra SV có ĐTB cao nhất
 		System.out.println("----------------------------------------------------------------------------------");
 		sv.maxDiemTB(listSV);
 		
-		//5. In ra tất cả SV Yếu
+		//4. In ra tất cả SV Yếu
 		System.out.println("----------------------------------------------------------------------------------");
 		sv.sinhVienYeu(listSV);
 		
-		//6. Tìm SV theo tênSV
+		//5. Tìm SV theo tênSV
 		System.out.println("----------------------------------------------------------------------------------");
 		timTenSV(scanner, listSV, sv);
 		
-		//7. Tìm SV theo mã SV
+		//6. Tìm SV theo mã SV
 		System.out.println("----------------------------------------------------------------------------------");
 		timMaSV(scanner, listSV, sv);
 		
-		//8. Xóa SV theo mã SV
+		//7. Xóa SV theo mã SV
 		System.out.println("----------------------------------------------------------------------------------");
 		xoaSV(scanner, listSV, sv);
 		
