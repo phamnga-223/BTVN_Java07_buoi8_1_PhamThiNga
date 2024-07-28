@@ -28,7 +28,7 @@ public class SinhVien {
 	}
 	
 	ArrayList<SinhVien> duLieuGia(int n) {
-		ArrayList<SinhVien> listSV = new ArrayList<>();
+		ArrayList<SinhVien> listSV = new ArrayList<SinhVien>();
 		
 		try {
 			//Kiểm tra số sinh viên
